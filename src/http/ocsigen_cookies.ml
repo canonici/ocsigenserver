@@ -24,6 +24,7 @@ module Cookies =
 type cookie =
   | OSet of float option * string * bool
   | OUnset
+[@@deriving json]
 
 type cookieset = cookie CookiesTable.t Cookies.t
 
