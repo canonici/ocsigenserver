@@ -35,7 +35,6 @@ module Cookies : Map.S with type key = Url.path
 type cookie =
   | OSet of float option * string * bool
   | OUnset
-[@@deriving json]
 
 type cookieset = cookie CookiesTable.t Cookies.t
 
